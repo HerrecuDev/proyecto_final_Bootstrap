@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Galaxy - Inicio</title>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo - pegado a la izquierda -->
+            <a class="navbar-brand p-0 me-3" href="index.html">
+                <img src="img/Logo_PGalaxy.png.png" alt="Logo" height="40">
+            </a>
+            
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú - centro -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tienda.html">Palas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Equipaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Zapatillas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Reservar Pistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Iconos y buscador - derecha (solo desktop) -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <a href="#" class="text-white text-decoration-none" title="Iniciar Sesión">
+                    <i class="bi bi-person fs-5"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none" title="Carrito">
+                    <i class="bi bi-cart fs-5"></i>
+                </a>
+                <div class="input-group input-group-sm w-auto">
+                    <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
+                    <button class="btn btn-secondary btn-sm" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Móvil: icono carrito -->
+            <div class="d-lg-none">
+                <a href="#" class="text-white text-decoration-none" title="Carrito">
+                    <i class="bi bi-cart fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <header class="bg-success d-flex align-items-center justify-content-center text-center py-5" style="min-height: 60vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h1 class="display-4 display-md-3 fw-bold text-white">¡Domina la pista con el equipo perfecto!</h1>
+                    <h2 class="display-6 fw-bold text-white mb-3">Visita la tienda de PadelGalaxy ahora</h2>
+                    <a href="tienda.html" class="btn btn-warning btn-lg fw-bold px-5">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- PISTAS DESTACADAS -->
+    <!-- ============================================ -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">PISTAS DESTACADAS</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/Cerrado_del_Aguila.jpg" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Pista Cerrado del Águila</h5>
+                            <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/raquetas_Mijas.webp" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Pista Raquetas de Mijas</h5>
+                            <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/wekap1.jpg" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Pista Fuengirola Pádel</h5>
+                            <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ÚLTIMAS NOVEDADES -->
+    <!-- ============================================ -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">ÚLTIMAS NOVEDADES</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/zapatillas.jpg.jpg" class="card-img-top" alt="Zapatillas" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Las mejores Zapatillas</h5>
+                            <p class="card-text text-muted">Gran variedad de marcas</p>
+                            <a href="#" class="text-warning fw-bold text-decoration-none">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/Kombat.webp" class="card-img-top" alt="Palas" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Nuevas Palas</h5>
+                            <p class="card-text text-muted">Conoce los nuevos modelos</p>
+                            <a href="#" class="text-warning fw-bold text-decoration-none">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/image.png" class="card-img-top" alt="Clases" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Clases de Pádel</h5>
+                            <p class="card-text text-muted">Aprende con profesionales</p>
+                            <a href="#" class="text-warning fw-bold text-decoration-none">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Padel Galaxy</h5>
+                    <p class="mb-0">Donde encontrarás el mejor material deportivo</p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-0">info@padelgalaxy.com<br>123 456 789</p>
+                </div>
+                <!-- Columna 3 -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Padel Galaxy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

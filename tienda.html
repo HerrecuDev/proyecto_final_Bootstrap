@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Galaxy - Catálogo de Palas</title>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo - pegado a la izquierda -->
+            <a class="navbar-brand p-0 me-3" href="index.html">
+                <img src="img/Logo_PGalaxy.png.png" alt="Logo" height="25">
+            </a>
+            
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú - centro -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tienda.html">Palas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Equipaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Zapatillas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Reservar Pistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Iconos y buscador - derecha (solo desktop) -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <a href="#" class="text-white text-decoration-none" title="Iniciar Sesión">
+                    <i class="bi bi-person fs-5"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none" title="Carrito">
+                    <i class="bi bi-cart fs-5"></i>
+                </a>
+                <div class="input-group input-group-sm w-auto">
+                    <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
+                    <button class="btn btn-secondary btn-sm" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Móvil: icono carrito -->
+            <div class="d-lg-none">
+                <a href="#" class="text-white text-decoration-none" title="Carrito">
+                    <i class="bi bi-cart fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- TÍTULO DE LA PÁGINA -->
+    <!-- ============================================ -->
+    <div class="bg-light py-4">
+        <div class="container">
+            <h1 class="text-center fw-bold">CATÁLOGO DE PALAS</h1>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ============================================ -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar con filtros -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">FILTROS</h5>
+                            
+                            <!-- Desplegable Marcas -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Marcas</label>
+                                <select class="form-select">
+                                    <option selected>Todas las marcas</option>
+                                    <option value="bullpadel">BULLPADEL</option>
+                                    <option value="adidas">ADIDAS</option>
+                                    <option value="nox">NOX</option>
+                                    <option value="babolat">BABOLAT</option>
+                                    <option value="siux">SIUX</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Desplegable Nivel -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Nivel</label>
+                                <select class="form-select">
+                                    <option selected>Todos los niveles</option>
+                                    <option value="principiante">Principiante</option>
+                                    <option value="intermedio">Intermedio</option>
+                                    <option value="avanzado">Avanzado</option>
+                                    <option value="profesional">Profesional</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Desplegable Forma -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Forma</label>
+                                <select class="form-select">
+                                    <option selected>Todas las formas</option>
+                                    <option value="redonda">Redonda</option>
+                                    <option value="diamante">Diamante</option>
+                                    <option value="lagrima">Lágrima</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Desplegable Precio -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Precio</label>
+                                <select class="form-select">
+                                    <option selected>Todos los precios</option>
+                                    <option value="0-50">0€ - 50€</option>
+                                    <option value="50-100">50€ - 100€</option>
+                                    <option value="100-150">100€ - 150€</option>
+                                    <option value="150-200">150€ - 200€</option>
+                                    <option value="200+">200€+</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn btn-primary w-100">Aplicar filtros</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Catálogo de productos -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <!-- Producto 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">BULLPADEL VERTEX 04</h5>
+                                    <p class="text-muted mb-2">Pala de pádel profesional</p>
+                                    <h4 class="text-success fw-bold">269,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">ADIDAS METALIVE 24</h5>
+                                    <p class="text-muted mb-2">Pala de pádel control</p>
+                                    <h4 class="text-success fw-bold">219,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">NOX ML10 PRO LUX</h5>
+                                    <p class="text-muted mb-2">Pala de pádel ataque</p>
+                                    <h4 class="text-success fw-bold">249,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 4 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">BABOLAT VERTEX 04</h5>
+                                    <p class="text-muted mb-2">Pala de pádel potencia</p>
+                                    <h4 class="text-success fw-bold">259,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 5 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">SIUX DEATH IV PRO</h5>
+                                    <p class="text-muted mb-2">Pala de pádel profesional</p>
+                                    <h4 class="text-primary fw-bold">239,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 6 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">BULLPADEL HACK 04</h5>
+                                    <p class="text-muted mb-2">Pala de pádel control</p>
+                                    <h4 class="text-success fw-bold">279,90 €</h4>
+                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Padel Galaxy</h5>
+                    <p class="mb-0">Donde encontrarás el mejor material deportivo</p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-0">info@padelgalaxy.com<br>123 456 789</p>
+                </div>
+                <!-- Columna 3 -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Padel Galaxy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
