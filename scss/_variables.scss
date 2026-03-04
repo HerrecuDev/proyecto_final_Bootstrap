@@ -3,6 +3,51 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+// =====================================================
+// MIS VARIABLES PERSONALIZADAS
+// =====================================================
+
+// Colores principales del proyecto
+$colorNegro:     #000000 !default;
+$colorBlanco:    #FFFFFF !default;
+$colorNaranja:    #ff7f07dd !default;
+$colorAzul:       #0d6efd !default;
+$colorVerde:      #198754 !default;
+$colorGris:      #6c757d !default;
+$colorRojo:      #dc3545 !default;
+$colorAmarillo:  #ffc107 !default;
+
+// Variables genéricas por sección
+$colorNavbar:     $colorNegro !default;
+$colorFooter:     $colorNegro !default;
+$colorBotones:    $colorNaranja !default;
+$colorIconos:     $colorBlanco !default;
+
+// Dimensiones genéricas
+$alturaLogo:      80px !default;
+$alturaHero:      60vh !default;
+$alturaCardImg:   250px !default;
+
+// =====================================================
+// FUENTES PERSONALIZADAS
+// =====================================================
+
+// Familias de fuentes
+$fuentePrincipal:     'Roboto', sans-serif !default;
+$fuenteSecundaria:    'Open Sans', sans-serif !default;
+$fuenteTitulos:       'Montserrat', sans-serif !default;
+
+// Tamaños de fuentes
+$fontSizeChica:    0.875rem !default;
+$fontSizeNormal:   1rem !default;
+$fontSizeGrande:   1.25rem !default;
+$fontSizeTitulo:   2rem !default;
+
+// Grosores de fuentes
+$fontWeightNormal:  400 !default;
+$fontWeightMedium:  500 !default;
+$fontWeightBold:   700 !default;
+
 // Color system
 
 // scss-docs-start gray-color-variables
@@ -363,6 +408,7 @@ $escaped-characters: (
   (")", "%29"),
 ) !default;
 
+// =====================================================
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
