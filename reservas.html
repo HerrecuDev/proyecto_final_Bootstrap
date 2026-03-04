@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padel Galaxy - Catálogo de Palas</title>
+    <title>Padel Galaxy - Reservas</title>
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse align-items-md-center gap-md-3 d-none d-md-flex" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                        <a class="nav-link text-white" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="tienda.html">Palas</a>
@@ -39,7 +39,7 @@
                         <a class="nav-link text-white" href="zapatillas.html">Zapatillas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="reservas.html">Reservar Pistas</a>
+                        <a class="nav-link text-warning fw-bold" href="reservas.html">Reservar Pistas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Contacto</a>
@@ -73,7 +73,7 @@
                 <div class="offcanvas-body d-flex flex-column">
                     <ul class="navbar-nav justify-content-center align-items-center text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                            <a class="nav-link text-white" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="tienda.html">Palas</a>
@@ -85,7 +85,7 @@
                             <a class="nav-link text-white" href="zapatillas.html">Zapatillas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="reservas.html">Reservar Pistas</a>
+                            <a class="nav-link text-warning fw-bold" href="reservas.html">Reservar Pistas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Contacto</a>
@@ -115,7 +115,7 @@
     <!-- ============================================ -->
     <div class="bg-light py-4">
         <div class="container">
-            <h1 class="text-center fw-bold">CATÁLOGO DE PALAS</h1>
+            <h1 class="text-center fw-bold">RESERVA TU PISTA</h1>
         </div>
     </div>
 
@@ -129,139 +129,121 @@
                 <div class="col-lg-3 mb-4">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body">
-                            <h5 class="fw-bold mb-3">FILTROS</h5>
+                            <h5 class="fw-bold mb-3">DATOS DE RESERVA</h5>
                             
-                            <!-- Desplegable Marcas -->
+                            <!-- Desplegable Pista -->
                             <div class="mb-4">
-                                <label class="form-label fw-bold">Marcas</label>
+                                <label class="form-label fw-bold">Pista</label>
                                 <select class="form-select">
-                                    <option selected>Todas las marcas</option>
-                                    <option value="bullpadel">BULLPADEL</option>
-                                    <option value="adidas">ADIDAS</option>
-                                    <option value="nox">NOX</option>
-                                    <option value="babolat">BABOLAT</option>
-                                    <option value="siux">SIUX</option>
+                                    <option selected>Selecciona una pista</option>
+                                    <option value="cerrado">Cerrado del Águila</option>
+                                    <option value="raquetas">Raquetas de Mijas</option>
+                                    <option value="fuengirola">Fuengirola Pádel</option>
+                                    <option value="club">Club Padel</option>
                                 </select>
                             </div>
                             
-                            <!-- Desplegable Nivel -->
+                            <!-- Fecha -->
                             <div class="mb-4">
-                                <label class="form-label fw-bold">Nivel</label>
+                                <label class="form-label fw-bold">Fecha</label>
+                                <input type="date" class="form-select">
+                            </div>
+                            
+                            <!-- Hora -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Hora</label>
                                 <select class="form-select">
-                                    <option selected>Todos los niveles</option>
-                                    <option value="principiante">Principiante</option>
-                                    <option value="intermedio">Intermedio</option>
-                                    <option value="avanzado">Avanzado</option>
-                                    <option value="profesional">Profesional</option>
+                                    <option selected>Selecciona hora</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
                                 </select>
                             </div>
                             
-                            <!-- Desplegable Forma -->
+                            <!-- Duración -->
                             <div class="mb-4">
-                                <label class="form-label fw-bold">Forma</label>
+                                <label class="form-label fw-bold">Duración</label>
                                 <select class="form-select">
-                                    <option selected>Todas las formas</option>
-                                    <option value="redonda">Redonda</option>
-                                    <option value="diamante">Diamante</option>
-                                    <option value="lagrima">Lágrima</option>
+                                    <option value="60">1 hora</option>
+                                    <option value="90">1:30 horas</option>
+                                    <option value="120">2 horas</option>
                                 </select>
                             </div>
                             
-                            <!-- Desplegable Precio -->
-                            <div class="mb-4">
-                                <label class="form-label fw-bold">Precio</label>
-                                <select class="form-select">
-                                    <option selected>Todos los precios</option>
-                                    <option value="0-50">0€ - 50€</option>
-                                    <option value="50-100">50€ - 100€</option>
-                                    <option value="100-150">100€ - 150€</option>
-                                    <option value="150-200">150€ - 200€</option>
-                                    <option value="200+">200€+</option>
-                                </select>
-                            </div>
-                            
-                            <button class="btn btn-primary w-100">Aplicar filtros</button>
+                            <button class="btn btn-primary w-100">Buscar pista</button>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Catálogo de productos -->
+                <!-- Pistas disponibles -->
                 <div class="col-lg-9">
                     <div class="row g-4">
-                        <!-- Producto 1 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Pista 1 -->
+                        <div class="col-12 col-md-6">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">BULLPADEL VERTEX 04</h5>
-                                    <p class="text-muted mb-2">Pala de pádel profesional</p>
-                                    <h4 class="text-success fw-bold">269,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                <img src="img/" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Pista Cerrado del Águila</h5>
+                                    <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                                    <p class="mb-1"><i class="bi bi-geo-alt"></i> Cerrado del Águila</p>
+                                    <p class="mb-1"><i class="bi bi-clock"></i> Disponibilidad: 9:00 - 22:00</p>
+                                    <h4 class="text-success fw-bold">25 €/hora</h4>
+                                    <button class="btn btn-warning w-100 mt-2">Reservar</button>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Producto 2 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Pista 2 -->
+                        <div class="col-12 col-md-6">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/kombat.jpg" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">ADIDAS METALIVE 24</h5>
-                                    <p class="text-muted mb-2">Pala de pádel control</p>
-                                    <h4 class="text-success fw-bold">219,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                <img src="img/" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Pista Raquetas de Mijas</h5>
+                                    <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                                    <p class="mb-1"><i class="bi bi-geo-alt"></i> Mijas</p>
+                                    <p class="mb-1"><i class="bi bi-clock"></i> Disponibilidad: 9:00 - 22:00</p>
+                                    <h4 class="text-success fw-bold">22 €/hora</h4>
+                                    <button class="btn btn-warning w-100 mt-2">Reservar</button>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Producto 3 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Pista 3 -->
+                        <div class="col-12 col-md-6">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">NOX ML10 PRO LUX</h5>
-                                    <p class="text-muted mb-2">Pala de pádel ataque</p>
-                                    <h4 class="text-success fw-bold">249,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                <img src="img/" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Pista Fuengirola Pádel</h5>
+                                    <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                                    <p class="mb-1"><i class="bi bi-geo-alt"></i> Fuengirola</p>
+                                    <p class="mb-1"><i class="bi bi-clock"></i> Disponibilidad: 9:00 - 22:00</p>
+                                    <h4 class="text-success fw-bold">20 €/hora</h4>
+                                    <button class="btn btn-warning w-100 mt-2">Reservar</button>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Producto 4 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Pista 4 -->
+                        <div class="col-12 col-md-6">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">BABOLAT VERTEX 04</h5>
-                                    <p class="text-muted mb-2">Pala de pádel potencia</p>
-                                    <h4 class="text-success fw-bold">259,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Producto 5 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">SIUX DEATH IV PRO</h5>
-                                    <p class="text-muted mb-2">Pala de pádel profesional</p>
-                                    <h4 class="text-primary fw-bold">239,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Producto 6 -->
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold">BULLPADEL HACK 04</h5>
-                                    <p class="text-muted mb-2">Pala de pádel control</p>
-                                    <h4 class="text-success fw-bold">279,90 €</h4>
-                                    <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
+                                <img src="img/" class="card-img-top" alt="Pista" style="height: 250px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Club Padel</h5>
+                                    <p class="card-text text-muted">Pista de pádel de alta calidad</p>
+                                    <p class="mb-1"><i class="bi bi-geo-alt"></i> Centro</p>
+                                    <p class="mb-1"><i class="bi bi-clock"></i> Disponibilidad: 9:00 - 22:00</p>
+                                    <h4 class="text-success fw-bold">18 €/hora</h4>
+                                    <button class="btn btn-warning w-100 mt-2">Reservar</button>
                                 </div>
                             </div>
                         </div>
