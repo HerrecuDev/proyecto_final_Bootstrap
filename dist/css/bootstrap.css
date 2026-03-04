@@ -32,7 +32,7 @@
   --bs-primary: #ffb507;
   --bs-secondary: #000000;
   --bs-success: #198754;
-  --bs-info: #0d6efd;
+  --bs-info: #0df1fd;
   --bs-warning: #ffb507;
   --bs-danger: #dc3545;
   --bs-light: #FFFFFF;
@@ -40,7 +40,7 @@
   --bs-primary-rgb: 255, 181, 7;
   --bs-secondary-rgb: 0, 0, 0;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 110, 253;
+  --bs-info-rgb: 13, 241, 253;
   --bs-warning-rgb: 255, 181, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 255, 255, 255;
@@ -48,7 +48,7 @@
   --bs-primary-text-emphasis: rgb(102, 72.4, 2.8);
   --bs-secondary-text-emphasis: black;
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
-  --bs-info-text-emphasis: rgb(5.2, 44, 101.2);
+  --bs-info-text-emphasis: rgb(5.2, 96.4, 101.2);
   --bs-warning-text-emphasis: rgb(102, 72.4, 2.8);
   --bs-danger-text-emphasis: rgb(88, 21.2, 27.6);
   --bs-light-text-emphasis: #495057;
@@ -56,7 +56,7 @@
   --bs-primary-bg-subtle: rgb(255, 240.2, 205.4);
   --bs-secondary-bg-subtle: #cccccc;
   --bs-success-bg-subtle: rgb(209, 231, 220.8);
-  --bs-info-bg-subtle: rgb(206.6, 226, 254.6);
+  --bs-info-bg-subtle: rgb(206.6, 252.2, 254.6);
   --bs-warning-bg-subtle: rgb(255, 240.2, 205.4);
   --bs-danger-bg-subtle: rgb(248, 214.6, 217.8);
   --bs-light-bg-subtle: rgb(251.5, 252, 252.5);
@@ -64,17 +64,17 @@
   --bs-primary-border-subtle: rgb(255, 225.4, 155.8);
   --bs-secondary-border-subtle: #999999;
   --bs-success-border-subtle: rgb(163, 207, 186.6);
-  --bs-info-border-subtle: rgb(158.2, 197, 254.2);
+  --bs-info-border-subtle: rgb(158.2, 249.4, 254.2);
   --bs-warning-border-subtle: rgb(255, 225.4, 155.8);
   --bs-danger-border-subtle: rgb(241, 174.2, 180.6);
   --bs-light-border-subtle: #e9ecef;
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "Roboto", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -144,7 +144,7 @@
   --bs-primary-text-emphasis: rgb(255, 210.6, 106.2);
   --bs-secondary-text-emphasis: #666666;
   --bs-success-text-emphasis: rgb(117, 183, 152.4);
-  --bs-info-text-emphasis: rgb(109.8, 168, 253.8);
+  --bs-info-text-emphasis: rgb(109.8, 246.6, 253.8);
   --bs-warning-text-emphasis: rgb(255, 210.6, 106.2);
   --bs-danger-text-emphasis: rgb(234, 133.8, 143.4);
   --bs-light-text-emphasis: #f8f9fa;
@@ -152,7 +152,7 @@
   --bs-primary-bg-subtle: rgb(51, 36.2, 1.4);
   --bs-secondary-bg-subtle: black;
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
-  --bs-info-bg-subtle: rgb(2.6, 22, 50.6);
+  --bs-info-bg-subtle: rgb(2.6, 48.2, 50.6);
   --bs-warning-bg-subtle: rgb(51, 36.2, 1.4);
   --bs-danger-bg-subtle: rgb(44, 10.6, 13.8);
   --bs-light-bg-subtle: #343a40;
@@ -160,7 +160,7 @@
   --bs-primary-border-subtle: rgb(153, 108.6, 4.2);
   --bs-secondary-border-subtle: black;
   --bs-success-border-subtle: rgb(15, 81, 50.4);
-  --bs-info-border-subtle: rgb(7.8, 66, 151.8);
+  --bs-info-border-subtle: rgb(7.8, 144.6, 151.8);
   --bs-warning-border-subtle: rgb(153, 108.6, 4.2);
   --bs-danger-border-subtle: rgb(132, 31.8, 41.4);
   --bs-light-border-subtle: #495057;
@@ -218,6 +218,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
@@ -2242,13 +2243,13 @@ progress {
 
 .table-info {
   --bs-table-color: #000;
-  --bs-table-bg: rgb(206.6, 226, 254.6);
-  --bs-table-border-color: rgb(165.28, 180.8, 203.68);
-  --bs-table-striped-bg: rgb(196.27, 214.7, 241.87);
+  --bs-table-bg: rgb(206.6, 252.2, 254.6);
+  --bs-table-border-color: rgb(165.28, 201.76, 203.68);
+  --bs-table-striped-bg: rgb(196.27, 239.59, 241.87);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: rgb(185.94, 203.4, 229.14);
+  --bs-table-active-bg: rgb(185.94, 226.98, 229.14);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: rgb(191.105, 209.05, 235.505);
+  --bs-table-hover-bg: rgb(191.105, 233.285, 235.505);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3460,20 +3461,20 @@ textarea.form-control-lg {
 }
 
 .btn-info {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(11.05, 93.5, 215.05);
-  --bs-btn-hover-border-color: rgb(10.4, 88, 202.4);
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(10.4, 88, 202.4);
-  --bs-btn-active-border-color: rgb(9.75, 82.5, 189.75);
+  --bs-btn-color: #000;
+  --bs-btn-bg: #0df1fd;
+  --bs-btn-border-color: #0df1fd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(49.3, 243.1, 253.3);
+  --bs-btn-hover-border-color: rgb(37.2, 242.4, 253.2);
+  --bs-btn-focus-shadow-rgb: 11, 205, 215;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(61.4, 243.8, 253.4);
+  --bs-btn-active-border-color: rgb(37.2, 242.4, 253.2);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #0df1fd;
+  --bs-btn-disabled-border-color: #0df1fd;
 }
 
 .btn-warning {
@@ -3596,19 +3597,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-info {
-  --bs-btn-color: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0d6efd;
-  --bs-btn-hover-border-color: #0d6efd;
-  --bs-btn-focus-shadow-rgb: 13, 110, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d6efd;
-  --bs-btn-active-border-color: #0d6efd;
+  --bs-btn-color: #0df1fd;
+  --bs-btn-border-color: #0df1fd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #0df1fd;
+  --bs-btn-hover-border-color: #0df1fd;
+  --bs-btn-focus-shadow-rgb: 13, 241, 253;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #0df1fd;
+  --bs-btn-active-border-color: #0df1fd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0d6efd;
+  --bs-btn-disabled-color: #0df1fd;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-border-color: #0df1fd;
   --bs-gradient: none;
 }
 
@@ -6419,7 +6420,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6529,7 +6530,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7667,7 +7668,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-info {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--bs-info-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -7723,8 +7724,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(10, 88, 202, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(10, 88, 202, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(61, 244, 253, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(61, 244, 253, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-warning {

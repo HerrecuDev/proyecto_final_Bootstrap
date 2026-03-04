@@ -7,58 +7,64 @@
 // MIS VARIABLES PERSONALIZADAS
 // =====================================================
 
-// Colores principales del proyecto
-$colorNegro:     #000000 !default;
-$colorBlanco:    #FFFFFF !default;
-$colorNaranja:    #ffb507 !default;
-$colorAzul:       #0d6efd !default;
-$colorCian:       #0df1fd !default;
-$colorVerde:      #198754 !default;
-$colorGris:      #6c757d !default;
-$colorRojo:      #dc3545 !default;
-$colorAmarillo:  #f3ff07eb !default;
+// Colores principales
+$colorNegro:    #000000;
+$colorBlanco:   #FFFFFF;
+$colorNaranja:  #ffb507;
+$colorAzul:     #0d6efd;
+$colorCian:     #0df1fd;
+$colorVerde:    #198754;
+$colorGris:     #6c757d;
+$colorRojo:     #dc3545;
+$colorAmarillo: #f3ff07eb; // Nota: alpha opcional, ajusta si es necesario
 
 // Variables genéricas por sección
-$colorNavbar:     $colorNegro !default;
-$colorFooter:     $colorNegro !default;
-$colorBotones:    $colorNaranja !default;
-$colorIconos:     $colorBlanco !default;
+$colorNavbar:   $colorNegro;
+$colorFooter:   $colorNegro;
+$colorBotones:  $colorNaranja;
+$colorIconos:   $colorBlanco;
 
+// Fuentes personalizadas
+$fuentePrincipal:   'Roboto', sans-serif;
+$fuenteSecundaria:  'Open Sans', sans-serif;
+$fuenteTitulos:     'Montserrat', sans-serif;
+$fuenteBotones: 'Poppins', sans-serif;
+
+// Tamaños de fuentes (opcionales, para uso personalizado)
+$fontSizeChica:   0.875rem;
+$fontSizeNormal:  1rem;
+$fontSizeGrande:  1.25rem;
+$fontSizeTitulo:  2rem;
+
+// Grosores
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
+$fontWeightBold:   700;
+
+// ==========================================================================
+// FUENTES MAPEADAS A BOOTSTRAP (NUEVO - AQUÍ SE AGREGA)
+// ==========================================================================
+$font-family-sans-serif:  $fuentePrincipal;     // Body, párrafos: Roboto
+$font-family-base:        $font-family-sans-serif;
+$headings-font-family:    $fuenteTitulos;        // h1-h6: Montserrat
+$font-size-base:          $fontSizeNormal;       // 1rem base
+$font-weight-bold:        $fontWeightBold;       // Bold: 700
 
 
 // =====================================================
 // MAPEO DE VARIABLES BOOTSTRAP
 // =====================================================
 // Aquí se mapean las variables de Bootstrap a mis variables personalizadas
-$primary:       $colorNaranja !default;
-$secondary:     $colorNegro !default;
-$success:       $colorVerde !default;
-$info:          $colorAzul !default;
-$warning:       $colorNaranja !default;
-$danger:        $colorRojo !default;
-$light:         $colorBlanco !default;
-$dark:          $colorNegro !default;
+$primary:   $colorNaranja;
+$secondary: $colorNegro;
+$success:   $colorVerde;
+$info:      $colorCian;     
+$warning:   $colorNaranja;
+$danger:    $colorRojo;
+$light:     $colorBlanco;
+$dark:      $colorNegro;
 
-// NO se implementarlo bien en el codigo la dejo declarado y listo.
-// =====================================================
-// FUENTES PERSONALIZADAS
-// =====================================================
 
-// Familias de fuentes
-$fuentePrincipal:     'Roboto', sans-serif !default;
-$fuenteSecundaria:    'Open Sans', sans-serif !default;
-$fuenteTitulos:       'Montserrat', sans-serif !default;
-
-// Tamaños de fuentes
-$fontSizeChica:    0.875rem !default;
-$fontSizeNormal:   1rem !default;
-$fontSizeGrande:   1.25rem !default;
-$fontSizeTitulo:   2rem !default;
-
-// Grosores de fuentes
-$fontWeightNormal:  400 !default;
-$fontWeightMedium:  500 !default;
-$fontWeightBold:   700 !default;
 
 // Color system
 
