@@ -19,12 +19,12 @@
             </a>
             
             <!-- Botón hamburguesa -->
-            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Menú - centro -->
-            <div class="collapse navbar-collapse align-items-md-center gap-md-3" id="navbarNav">
+            <div class="collapse navbar-collapse align-items-md-center gap-md-3 d-none d-md-flex" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
@@ -65,6 +65,40 @@
                 </div>
             </div>
 
+            <div class="offcanvas offcanvas-end text-bg-dark w-50 d-md-none" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarOffcanvasLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center align-items-center text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="tienda.html">Palas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Equipaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Zapatillas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Reservar Pistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-auto d-flex justify-content-end gap-2">
+                        <a class="btn btn-outline-light" href="#">Iniciar sesión</a>
+                        <a class="btn btn-warning" href="#">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="d-md-none w-100 mt-2">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
@@ -72,13 +106,6 @@
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
-            </div>
-            
-            <!-- Móvil: icono carrito -->
-            <div class="d-md-none">
-                <a href="#" class="text-white text-decoration-none" title="Carrito">
-                    <i class="bi bi-cart fs-5"></i>
-                </a>
             </div>
         </div>
     </nav>
