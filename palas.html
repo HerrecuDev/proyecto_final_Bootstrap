@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- ============================================ -->
-    <!-- NAVBAR -->
-    <!-- ============================================ -->
+    
+    <!-- CABECERA -->
+    
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <!-- Logo - pegado a la izquierda -->
-            <a class="navbar-brand p-0 me-3" href="index.html">
+            <!-- LOGO DE MI WEB -->
+            <a class="navbar-brand p-0 me-3" href="principal.html">
                 <img src="img/logo.jpg" alt="Logo" height="80">
             </a>
             
@@ -23,17 +23,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Menú - centro -->
+            <!-- ELEMENTOS DEL NAV -->
             <div class="collapse navbar-collapse align-items-md-center gap-md-3 d-none d-md-flex" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                        <a class="nav-link text-warning fw-bold" href="principal.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="tienda.html">Palas</a>
+                        <a class="nav-link text-white" href="palas.html">Palas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Equipaciones</a>
+                        <a class="nav-link text-white" href="equipaciones.html">Equipaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="zapatillas.html">Zapatillas</a>
@@ -42,11 +42,11 @@
                         <a class="nav-link text-white" href="reservas.html">Reservar Pistas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contacto</a>
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
                     </li>
                 </ul>
 
-                <!-- Iconos y buscador - derecha (solo desktop) -->
+                <!-- ICONOS Y BUSCADOR -->
                 <div class="d-none d-md-flex flex-column align-items-end gap-1">
                     <div class="d-flex align-items-center gap-2">
                         <a href="#" class="text-white text-decoration-none" title="Iniciar Sesión">
@@ -73,13 +73,13 @@
                 <div class="offcanvas-body d-flex flex-column">
                     <ul class="navbar-nav justify-content-center align-items-center text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
+                            <a class="nav-link text-warning fw-bold" href="principal.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="tienda.html">Palas</a>
+                            <a class="nav-link text-white" href="palas.html">Palas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Equipaciones</a>
+                            <a class="nav-link text-white" href="equipaciones.html">Equipaciones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="zapatillas.html">Zapatillas</a>
@@ -88,7 +88,7 @@
                             <a class="nav-link text-white" href="reservas.html">Reservar Pistas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contacto</a>
+                            <a class="nav-link text-white" href="#contacto">Contacto</a>
                         </li>
                     </ul>
 
@@ -111,7 +111,7 @@
     </nav>
 
     <!-- ============================================ -->
-    <!-- TÍTULO DE LA PÁGINA -->
+    <!-- TITULO DE LA PAGINA -->
     <!-- ============================================ -->
     <div class="bg-light py-4">
         <div class="container">
@@ -119,13 +119,12 @@
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- CONTENIDO PRINCIPAL -->
-    <!-- ============================================ -->
+    <!-- CATÁLOGO DE PALAS -->
+    
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Sidebar con filtros -->
+                <!-- FILTROS -->
                 <div class="col-lg-3 mb-4">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body">
@@ -144,7 +143,7 @@
                                 </select>
                             </div>
                             
-                            <!-- Desplegable Nivel -->
+                            <!-- Desplegable nivel -->
                             <div class="mb-4">
                                 <label class="form-label fw-bold">Nivel</label>
                                 <select class="form-select">
@@ -185,10 +184,10 @@
                     </div>
                 </div>
                 
-                <!-- Catálogo de productos -->
+                <!-- PRODUCTOS -->
                 <div class="col-lg-9">
                     <div class="row g-4">
-                        <!-- Producto 1 -->
+                        <!-- PRODUCTO 1 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
@@ -201,7 +200,7 @@
                             </div>
                         </div>
                         
-                        <!-- Producto 2 -->
+                        <!-- PRODUCTO 2 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/kombat.jpg" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
@@ -214,7 +213,7 @@
                             </div>
                         </div>
                         
-                        <!-- Producto 3 -->
+                        <!-- PRODUCTO 3 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
@@ -227,7 +226,7 @@
                             </div>
                         </div>
                         
-                        <!-- Producto 4 -->
+                        <!-- PRODUCTO 4 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
@@ -240,20 +239,20 @@
                             </div>
                         </div>
                         
-                        <!-- Producto 5 -->
+                        <!-- PRODUCTO 5 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">SIUX DEATH IV PRO</h5>
                                     <p class="text-muted mb-2">Pala de pádel profesional</p>
-                                    <h4 class="text-primary fw-bold">239,90 €</h4>
+                                    <h4 class="text-success fw-bold">239,90 €</h4>
                                     <button class="btn btn-primary mt-2 w-100">Añadir al carrito</button>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Producto 6 -->
+                        <!-- PRODUCTO 6 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
                                 <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
@@ -274,7 +273,7 @@
     <!-- ============================================ -->
     <!-- FOOTER -->
     <!-- ============================================ -->
-    <footer class="bg-dark text-white py-4">
+    <footer id="contacto" class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <!-- Columna 1 -->
