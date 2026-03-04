@@ -10,12 +10,13 @@
 // Colores principales del proyecto
 $colorNegro:     #000000 !default;
 $colorBlanco:    #FFFFFF !default;
-$colorNaranja:    #ff7f07dd !default;
+$colorNaranja:    #ffb507 !default;
 $colorAzul:       #0d6efd !default;
+$colorCian:       #0df1fd !default;
 $colorVerde:      #198754 !default;
 $colorGris:      #6c757d !default;
 $colorRojo:      #dc3545 !default;
-$colorAmarillo:  #ffc107 !default;
+$colorAmarillo:  #f3ff07eb !default;
 
 // Variables genéricas por sección
 $colorNavbar:     $colorNegro !default;
@@ -27,6 +28,19 @@ $colorIconos:     $colorBlanco !default;
 $alturaLogo:      80px !default;
 $alturaHero:      60vh !default;
 $alturaCardImg:   250px !default;
+
+// =====================================================
+// MAPEO DE VARIABLES BOOTSTRAP
+// =====================================================
+// Aquí se mapean las variables de Bootstrap a mis variables personalizadas
+$primary:       $colorNaranja !default;
+$secondary:     $colorNegro !default;
+$success:       $colorVerde !default;
+$info:          $colorAzul !default;
+$warning:       $colorNaranja !default;
+$danger:        $colorRojo !default;
+$light:         $colorBlanco !default;
+$dark:          $colorNegro !default;
 
 // =====================================================
 // FUENTES PERSONALIZADAS
@@ -343,14 +357,14 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary:       $colorAzul !default;
+$secondary:     $colorGris !default;
+$success:       $colorVerde !default;
+$info:          $colorCian !default;
+$warning:       $colorNaranja !default;
+$danger:        $colorRojo !default;
+$light:         $colorBlanco !default;
+$dark:          $colorNegro !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
