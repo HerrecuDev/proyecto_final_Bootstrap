@@ -1,101 +1,121 @@
-a {
-  font-size: 1rem;
-}
+// Tamaños de fuente base según dispositivo: móvil / tablet / web
+// Los uso para mantener coherencia y no repetir valores en cada selector.
+$medidaFuenteModoMovil: 0.98rem;
+$medidaFuenteModoTablet: 1rem;
+$medidaFuenteModoWeb: 1.05rem;
+
+// Tamaños de fuente para enlaces del navbar (nav-link)
+$medidaFuenteNavModoMovil: $medidaFuenteModoMovil;
+$medidaFuenteNavModoTablet: $medidaFuenteModoTablet;
+$medidaFuenteNavModoWeb: $medidaFuenteModoWeb;
+
+// Tamaños de fuente para botones (btn)
+$medidaFuenteBtnModoMovil: $medidaFuenteModoMovil;
+$medidaFuenteBtnModoTablet: $medidaFuenteModoTablet;
+$medidaFuenteBtnModoWeb: $medidaFuenteModoWeb;
+
+// Tamaño de fuente para textos pequeños (small)
+$medidaFuenteSmall: 0.875rem;
+
+// Tamaños de títulos adaptados al ancho disponible
+$medidaFuenteH1ModoMovil: calc(1.3rem + 1.2vw);
+$medidaFuenteH1ModoTablet: calc(1.375rem + 1.5vw);
+$medidaFuenteH1ModoWeb: calc(1.45rem + 1.6vw);
+
+$medidaFuenteH2ModoMovil: calc(1.25rem + 0.7vw);
+$medidaFuenteH2ModoTablet: calc(1.325rem + 0.9vw);
+$medidaFuenteH2ModoWeb: calc(1.4rem + 1vw);
+
+$medidaFuenteH3ModoMovil: calc(1.2rem + 0.5vw);
+$medidaFuenteH3ModoTablet: calc(1.3rem + 0.6vw);
+$medidaFuenteH3ModoWeb: calc(1.35rem + 0.7vw);
+
+ a {
+   font-size: $medidaFuenteModoMovil;
+ }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: $medidaFuenteNavModoMovil;
 }
 
 .btn {
-  font-size: 1rem;
+  font-size: $medidaFuenteBtnModoMovil;
 }
 
 .small,
 small {
-  font-size: 0.875rem;
+  font-size: $medidaFuenteSmall;
 }
 
 h1,
 .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: $medidaFuenteH1ModoMovil;
 }
 
 h2,
 .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: $medidaFuenteH2ModoMovil;
 }
 
 h3,
 .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: $medidaFuenteH3ModoMovil;
 }
 
 @media (min-width: 576px) {
   a {
-    font-size: 1rem;
+    font-size: $medidaFuenteModoTablet;
   }
 
   .nav-link {
-    font-size: 1rem;
+    font-size: $medidaFuenteNavModoTablet;
   }
 
   .btn {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  a {
-    font-size: 1.02rem;
+    font-size: $medidaFuenteBtnModoTablet;
   }
 
-  .nav-link {
-    font-size: 1.02rem;
+  h1,
+  .h1 {
+    font-size: $medidaFuenteH1ModoTablet;
   }
 
-  .btn {
-    font-size: 1.02rem;
+  h2,
+  .h2 {
+    font-size: $medidaFuenteH2ModoTablet;
+  }
+
+  h3,
+  .h3 {
+    font-size: $medidaFuenteH3ModoTablet;
   }
 }
 
 @media (min-width: 992px) {
   a {
-    font-size: 1.05rem;
+    font-size: $medidaFuenteModoWeb;
   }
 
   .nav-link {
-    font-size: 1.05rem;
+    font-size: $medidaFuenteNavModoWeb;
   }
 
   .btn {
-    font-size: 1.05rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  a {
-    font-size: 1.06rem;
+    font-size: $medidaFuenteBtnModoWeb;
   }
 
-  .nav-link {
-    font-size: 1.06rem;
+  h1,
+  .h1 {
+    font-size: $medidaFuenteH1ModoWeb;
   }
 
-  .btn {
-    font-size: 1.06rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  a {
-    font-size: 1.07rem;
+  h2,
+  .h2 {
+    font-size: $medidaFuenteH2ModoWeb;
   }
 
-  .nav-link {
-    font-size: 1.07rem;
-  }
-
-  .btn {
-    font-size: 1.07rem;
+  h3,
+  .h3 {
+    font-size: $medidaFuenteH3ModoWeb;
   }
 }

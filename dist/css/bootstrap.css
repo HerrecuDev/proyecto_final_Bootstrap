@@ -13358,15 +13358,15 @@ textarea.form-control-lg {
   }
 }
 a {
-  font-size: 1rem;
+  font-size: 0.98rem;
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 0.98rem;
 }
 
 .btn {
-  font-size: 1rem;
+  font-size: 0.98rem;
 }
 
 .small,
@@ -13376,17 +13376,17 @@ small {
 
 h1,
 .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.3rem + 1.2vw);
 }
 
 h2,
 .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.25rem + 0.7vw);
 }
 
 h3,
 .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.2rem + 0.5vw);
 }
 
 @media (min-width: 576px) {
@@ -13399,16 +13399,17 @@ h3,
   .btn {
     font-size: 1rem;
   }
-}
-@media (min-width: 768px) {
-  a {
-    font-size: 1.02rem;
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
   }
-  .nav-link {
-    font-size: 1.02rem;
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
   }
-  .btn {
-    font-size: 1.02rem;
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
   }
 }
 @media (min-width: 992px) {
@@ -13421,26 +13422,16 @@ h3,
   .btn {
     font-size: 1.05rem;
   }
-}
-@media (min-width: 1200px) {
-  a {
-    font-size: 1.06rem;
+  h1,
+  .h1 {
+    font-size: calc(1.45rem + 1.6vw);
   }
-  .nav-link {
-    font-size: 1.06rem;
+  h2,
+  .h2 {
+    font-size: calc(1.4rem + 1vw);
   }
-  .btn {
-    font-size: 1.06rem;
-  }
-}
-@media (min-width: 1400px) {
-  a {
-    font-size: 1.07rem;
-  }
-  .nav-link {
-    font-size: 1.07rem;
-  }
-  .btn {
-    font-size: 1.07rem;
+  h3,
+  .h3 {
+    font-size: calc(1.35rem + 0.7vw);
   }
 }

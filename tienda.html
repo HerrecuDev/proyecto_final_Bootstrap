@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padel Galaxy - Catálogo de Palas</title>
     <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <link href="_styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- ============================================ -->
     <!-- NAVBAR -->
     <!-- ============================================ -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <!-- Logo - pegado a la izquierda -->
             <a class="navbar-brand p-0 me-3" href="index.html">
-                <img src="img/Logo_PGalaxy.png.png" alt="Logo" height="25">
+                <img src="img/logo.jpg" alt="Logo" height="80">
             </a>
             
             <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Menú - centro -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse align-items-md-center gap-md-3" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link text-warning fw-bold" href="index.html">Inicio</a>
@@ -46,9 +45,27 @@
                         <a class="nav-link text-white" href="#">Contacto</a>
                     </li>
                 </ul>
+
+                <!-- Iconos y buscador - derecha (solo desktop) -->
+                <div class="d-none d-md-flex flex-column align-items-end gap-1">
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" class="text-white text-decoration-none" title="Iniciar Sesión">
+                            <i class="bi bi-person fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none" title="Carrito">
+                            <i class="bi bi-cart fs-5"></i>
+                        </a>
+                    </div>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
+                        <button class="btn btn-secondary btn-sm" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="d-lg-none w-100 mt-2">
+            <div class="d-md-none w-100 mt-2">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
                     <button class="btn btn-secondary btn-sm" type="button">
@@ -57,24 +74,8 @@
                 </div>
             </div>
             
-            <!-- Iconos y buscador - derecha (solo desktop) -->
-            <div class="d-none d-lg-flex align-items-center gap-3">
-                <a href="#" class="text-white text-decoration-none" title="Iniciar Sesión">
-                    <i class="bi bi-person fs-5"></i>
-                </a>
-                <a href="#" class="text-white text-decoration-none" title="Carrito">
-                    <i class="bi bi-cart fs-5"></i>
-                </a>
-                <div class="input-group input-group-sm w-auto">
-                    <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
-                    <button class="btn btn-secondary btn-sm" type="button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-            </div>
-            
             <!-- Móvil: icono carrito -->
-            <div class="d-lg-none">
+            <div class="d-md-none">
                 <a href="#" class="text-white text-decoration-none" title="Carrito">
                     <i class="bi bi-cart fs-5"></i>
                 </a>
@@ -163,7 +164,7 @@
                         <!-- Producto 1 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">BULLPADEL VERTEX 04</h5>
                                     <p class="text-muted mb-2">Pala de pádel profesional</p>
@@ -176,7 +177,7 @@
                         <!-- Producto 2 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/kombat.jpg" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">ADIDAS METALIVE 24</h5>
                                     <p class="text-muted mb-2">Pala de pádel control</p>
@@ -189,7 +190,7 @@
                         <!-- Producto 3 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">NOX ML10 PRO LUX</h5>
                                     <p class="text-muted mb-2">Pala de pádel ataque</p>
@@ -202,7 +203,7 @@
                         <!-- Producto 4 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">BABOLAT VERTEX 04</h5>
                                     <p class="text-muted mb-2">Pala de pádel potencia</p>
@@ -215,7 +216,7 @@
                         <!-- Producto 5 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">SIUX DEATH IV PRO</h5>
                                     <p class="text-muted mb-2">Pala de pádel profesional</p>
@@ -228,7 +229,7 @@
                         <!-- Producto 6 -->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/Kombat.webp" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
+                                <img src="img/" class="card-img-top p-3" alt="Pala" style="height: 250px; object-fit: contain;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold">BULLPADEL HACK 04</h5>
                                     <p class="text-muted mb-2">Pala de pádel control</p>
